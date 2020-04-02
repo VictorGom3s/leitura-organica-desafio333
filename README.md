@@ -1,4 +1,4 @@
-# 📚📚 leitura-organica-desafio333 📚📚 
+<h1 align="center"> 📚📚 leitura-organica-desafio333 📚📚 </h1>
 
 Landing Page e Teste de Leitura criados para o desafio333 de Janeiro de 2020 em parceria com o Leitura Orgânica.
 
