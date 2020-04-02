@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leitura Orgânica</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./public/img/Logo-Azul.png" alt="Leitura Orgânica" />
+      <nav>
+        <!-- <a class="link" href="#0">O que é?</a>
+        <a class="link" href="#0">Como Funciona?</a>
+        <a class="link" href="#0">Teste</a> -->
+        <a class="btn btn-header" href="#teste">Calcular</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="chamada">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <h1>
+                Você já parou para calcular
+                <b>a sua velocidade de leitura?</b>
+              </h1>
+              <a href="#teste" class="btn btn-chamada">Calcular</a>
+            </div>
+            <div class="col-6 bg-svg">
+              <img
+                src="public/img/undraw_reading_0re1.svg"
+                alt="Girl reading a book"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="oque-e">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <img
+                src="./public/img/undraw_book_lover_mkck.svg"
+                alt="Girl sitting on books"
+              />
+            </div>
+            <div class="col-6">
+              <h2 class="title">O que é?</h2>
+              <p>
+                Num mundo tão subjetivo quanto o da leitura, a velocidade de
+                leitura é uma métrica objetiva que te permite saber como está a
+                sua leitura nesse momento e te permite acompanhar a sua
+                evolução!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="como-functiona" class="bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2 class="title">Como Funciona?</h2>
+              <p>
+                A medida mais utilizada para calcular a velocidade de leitura é
+                Palavras por Minuto (PPM). Uma leitura em páginas por hora, por
+                exemplo, não pode ser aplicada em qualquer livro (pois tem
+                tamanhos diferentes de páginas), muito menos em artigos ou
+                notícias. Que tal descobrir agora a sua velocidade de leitura?
+              </p>
+            </div>
+            <div class="col-4">
+              <img
+                src="public/img/undraw_reading_book_4wjf.svg"
+                alt="Girl reading while doing exercises"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="teste">
+        <div class="container">
+          <h2 class="title">Instruções</h2>
+          <p class="instrucoes">
+            Quando estiver pronto para testar sua velocidade de leitura, clique
+            abaixo no botão “Iniciar”. Em seguida, realize a leitura do texto
+            proposto e, clique em concluir. Atente-se ao fato de que o botão
+            ficará vermelho até a leitura ser concluida. Isso significa que você
+            ainda não pode terminar o teste. Quando o botão ficar verde, será
+            possivel finalizar o teste . Após isso, o sistema calculará sua
+            velocidade de leitura e apresentará o resultado na tela.
+          </p>
+
+          <div class="kindle">
+            <div class="screen" id="texto-kindle">
+              ...
+            </div>
+            <button class="btn btn-kindle" id="iniciarTeste">Iniciar</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="container">
+          <div class="chamada-footer">
+            <h1>Leitura Orgânica</h1>
+            <p>Curso de Leitura Online</p>
+            <a
+              href="https://www.leituraorganica.com.br/"
+              class="btn btn-chamada"
+              >Quero ler mais e melhor</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="public/img/Logo - Branca.png" alt="logo branco" />
+            </div>
+            <div class="col">
+              <p class="footer-text">
+                Desenvolvido com
+                <span><img src="public/img/Vector-1.svg" alt="amor"/></span> por
+                <a href="https://github.com/victorgom3s">@VictorGom3s</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div class="modal" style="display: none">
+      <div class="modal-header"></div>
+      <div class="modal-content">...</div>
+      <div class="modal-share" style="display: none">
+        <!-- <a href="#0" class="btn-fb">
+          <img src="public/img/bx_bxl-facebook.svg" alt="facebook share" />
+        </a> -->
+        <small>Compartilhar no Twitter:</small>
+        <a
+          href="https://twitter.com/intent/tweet"
+          class="btn-tt twitter-share-button"
+        >
+          <img src="public/img/twitter.svg" alt="Twitter share" />
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-close">Fechar</button>
+        <a class="btn btn-modal" href="mailto:" style="display: none">
+          Enviar por E-mail
+        </a>
+      </div>
+    </div>
+
+    <!-- <script src="./js/textos.js"></script>
+    <script src="./js/Modal.js"></script> -->
+    <script src="./js/readingTest.js"></script>
+  </body>
+</html>
