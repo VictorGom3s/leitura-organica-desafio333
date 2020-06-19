@@ -13,7 +13,7 @@ const modal = new Modal(".modal");
 let testeState = 0;
 let horaInicio;
 
-const checkScrollToTheEnd = btn => {
+const checkScrollToTheEnd = (btn) => {
   screen.onscroll = () => {
     if (screen.scrollTop == screen.scrollTopMax) {
       btn.removeAttribute("disabled");
@@ -22,7 +22,7 @@ const checkScrollToTheEnd = btn => {
   };
 };
 
-const toggleButtonAction = e => {
+const toggleButtonAction = (e) => {
   console.log(testeState);
   switch (testeState) {
     case 0:
@@ -37,7 +37,7 @@ const toggleButtonAction = e => {
   }
 };
 
-const finalizarTeste = e => {
+const finalizarTeste = (e) => {
   const horaFim = Math.floor(Date.now() / 1000);
   const tempoFinal = (horaFim - horaInicio) / 60;
 
@@ -58,7 +58,7 @@ const finalizarTeste = e => {
   }
 };
 
-const iniciarTeste = e => {
+const iniciarTeste = (e) => {
   testeState = 1;
 
   horaInicio = Math.floor(Date.now() / 1000);
@@ -75,3 +75,5 @@ const iniciarTeste = e => {
   const btnIniciar = document.getElementById("iniciarTeste");
   btnIniciar.addEventListener("click", toggleButtonAction);
 })();
+
+export { iniciarTeste };
