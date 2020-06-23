@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "e2e": "npx cypress open",
+    "test": "npx cypress run"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "nodemailer": "^6.4.3"
   },
   "browserslist": [
-    "last 2 Chrome versions"
+    "last 2 Chrome versions",
+    "last 2 Firefox versions"
   ]
 }

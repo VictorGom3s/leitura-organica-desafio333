@@ -15,7 +15,7 @@ let horaInicio;
 
 const checkScrollToTheEnd = (btn) => {
   screen.onscroll = () => {
-    if (screen.scrollTop == screen.scrollTopMax) {
+    if (screen.offsetHeight + screen.scrollTop >= screen.scrollHeight) {
       btn.removeAttribute("disabled");
       return true;
     }
@@ -23,7 +23,6 @@ const checkScrollToTheEnd = (btn) => {
 };
 
 const toggleButtonAction = (e) => {
-  console.log(testeState);
   switch (testeState) {
     case 0:
       iniciarTeste(e);
@@ -65,7 +64,6 @@ const iniciarTeste = (e) => {
   e.target.innerText = "Finalizar";
   e.target.setAttribute("disabled", "");
 
-  /* Ao scrollar a tela do kindle, verifica se o usuario já scrolou até o fim */
   checkScrollToTheEnd(e.target);
 };
 
