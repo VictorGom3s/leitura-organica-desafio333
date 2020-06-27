@@ -26,3 +26,5 @@ describe("Reading Test", () => {
     cy.get(".modal .btn-close").click().should("not.be.visible");
   });
 });
+
+context("Unit tests", () => {});
