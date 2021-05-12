@@ -17,7 +17,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "nodemailer": "^6.4.3"
+    "nodemailer": "^6.4.16"
   },
   "browserslist": [
     "last 2 Chrome versions",
